@@ -1,93 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-		<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="미니언즈친구 - 프로필 링크">
-    <meta property="og:description" content="안녕하세요? 미니언즈친구입니다.">
-    <meta property="og:image" content="미니언즈친구_정사각형.jpg">
-    <title>미니언즈친구 - 프로필 링크</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>띵동코딩-부트스트랩_파타고니아</title>
     <style>
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
         * {
-            font-family: "Pretendard",serif;
+            font-family: 'Noto Sans KR', sans-serif;
         }
-        body {
-            background-color: yellow;   
+        body,h1,h2,h3,p,a {
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
         }
-        .profile {
-            width: 100px;
-            height: 100px;
-            
-            border-radius: 100%;
-
-            border: 2px solid white;
-
-            background-image: url('미니언즈친구_정사각형.jpg');
-            background-position: center;
-            background-size: cover;
-        }
-        .main {
-            color: black;
-            font-size: 20px;
-
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-        .sub {
-            color: #44398A;
-            font-size: 14px;
-
-            margin-top: 0px;
-            margin-bottom: 30px;
-        }
-        .wrap {
-            width: 300px;
-            margin: 30px auto 0px auto;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .wrap > a {
-            width: 300px;
+        .up {
+            background-color: #500778;
             height: 50px;
 
-            background-color: white;
-            border-radius: 8px;
-
-            margin-bottom: 10px;
-
-            font-size: 14px;
-            font-weight: bold;
-            color: #44398A;
-
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-
-            text-decoration: none;
-
-            box-shadow: 3px 3px 5px 0px black;
         }
-        .wrap > a:hover {
-            background-color: #f2f2f2;
+        .up > a:first-child {
+            margin-left: auto;
         }
+        .up > a:last-child {
+            margin-right: 20px;
+        }
+        .up > a {
+            color: white;
+            margin-right: 10px;
+        }
+        .up > span {
+            color: white;
+            margin-right: 10px;
+        }
+        .down {
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .down > img {
+            width: 130px;
+            margin-left: 20px;
+        }
+        .down > a {
+            margin-left: 80px;
+            font-weight: 900;
+            color: black;
+        }
+        .down > form {
+            margin-left: 80px;
+            margin-right: auto;
+            width: 500px;
+        }
+        .icons {
+            font-size: 24px;
+        }
+        .icons > i {
+            margin-right: 10px;
+        }
+        .main > img {
+            width: 100%;
+        }
+        .items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
 
+            padding: 30px;
+        }
+        .imgs {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start; 
+
+            margin-right: auto;
+            margin-left: 100px;
+        }
+        .card {
+            margin-right: 10px;
+        }
+        .list-group > span {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+        .items > select {
+            width: 120px;
+        }
     </style>
 </head>
 <body>
-    <div class="wrap">
-        <div class="profile"></div>
-        <h1 class="main">미니언즈친구</h1>
-        <p class="sub">코딩 입문자(코린이)</p>
-        <a target="_blank" href="https://instagram.com/minionjune">인스타그램</a>
-        <a target="_blank" href="https://www.facebook.com/junoh.lee.37">페이스북</a>
-        <a target="_blank" href="https://spartacodingclub.kr/">스파르타코딩클럽</a>
-        <a target="_blank" href="https://ddingdong.spartacodingclub.kr/">띵동코딩</a>
+    <div class="gnb">
+		<div class="up">
+            <a href="#">Climate Goals</a>
+            <a href="#">푸른 심장</a>
+            <a href="#">Worn Wear</a>
+            <span>|</span>
+            <a href="#">더보기</a>
+        </div>
+        <div class="down">
+            <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_main_logo.png">
+            <a href="#">SHOP</a>
+            <a href="#">INSIDE PATAGONIA</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <div class="icons">
+                <i class="bi bi-question-circle-fill"></i>
+                <i class="bi bi-person-fill"></i>
+                <i class="bi bi-cart-fill"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+		<img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_main_banner.png">
+    </div>
+    <div class="items">
+        <ul class="list-group list-group-flush">
+            <span>WOMEN'S</span>
+            <li class="list-group-item">신상품</li>
+            <li class="list-group-item">재킷 & 베스트</li>
+            <li class="list-group-item">플리스</li>
+            <li class="list-group-item">스웨트셔츠 & 후디</li>
+            <li class="list-group-item">셔츠</li>
+            <li class="list-group-item">티셔츠</li>
+            <li class="list-group-item">팬츠 & 레깅스</li>
+            <li class="list-group-item">모자 & 액세서리</li>
+        </ul>
+        <div class="imgs">
+            <div class="card" style="width: 18rem;">
+                <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_item_1.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        <span>Women Stand Up Overalls</span></br>
+                        <span>₩159,000</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_item_2.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        <span>Women Ridge Flow Shirt</span></br>
+                        <span>₩89,000</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_item_3.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        <span>Women All Seasons Hemp Canvas Shorts</span></br>
+                        <span>₩119,000</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>상품정렬</option>
+            <option value="1">최신순</option>
+            <option value="2">높은 가격순</option>
+            <option value="3">낮은 가격순</option>
+        </select>
     </div>
 </body>
 </html>
